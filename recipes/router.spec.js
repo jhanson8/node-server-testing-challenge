@@ -33,7 +33,7 @@ describe("recipes router", function() {
     });
 
     it("should return an array of recipes (async version)", async function() {
-      const res = await request(server).get("/api/cohorts");
+      const res = await request(server).get("/api/recipes");
 
       expect(Array.isArray(res.body)).toBe(true);
     });
